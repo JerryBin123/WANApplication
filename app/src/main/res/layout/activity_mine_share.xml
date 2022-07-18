@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mine.MineShareActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/mine_background_blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/mine_share_back"
+                android:src="@drawable/ic_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:tint="@color/white" />
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="我的分享"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <ImageView
+                android:id="@+id/share_article"
+                app:tint="@color/white"
+                android:src="@drawable/ic_add"
+                android:layout_marginEnd="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mine_share_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

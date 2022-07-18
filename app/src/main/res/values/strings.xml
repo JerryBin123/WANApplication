@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WANApplication</string>
+    <string name="bottom_title_home">首页</string>
+    <string name="bottom_title_qa">问答</string>
+    <string name="bottom_title_navi">体系</string>
+    <string name="bottom_title_mine">我的</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="header_pulldown">王守金陵，视事一日移南郡</string>
+</resources>

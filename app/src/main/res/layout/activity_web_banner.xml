@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebBannerActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/mine_background_blue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <LinearLayout
+            android:background="@drawable/web_top"
+            android:padding="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/web_banner_collect"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_collect"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:tint="@color/white" />
+            <EditText
+                android:layout_marginStart="10dp"
+                android:id="@+id/banner_url"
+                android:background="@null"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_into"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:tint="@color/white" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <WebView
+        android:id="@+id/banner_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

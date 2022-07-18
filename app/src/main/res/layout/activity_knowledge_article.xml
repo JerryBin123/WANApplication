@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".navi.KnowledgeArticleActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/mine_background_blue"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:src="@drawable/ic_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:tint="@color/white" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="开发环境"
+                android:textColor="@color/white"
+                android:id="@+id/knowledge_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/knowledge_article_tabLayout"
+        app:tabIndicatorHeight="0dp"
+        android:background="@color/mine_background_blue"
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/knowledge_article_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

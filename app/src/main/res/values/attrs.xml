@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoginBackgroundView">
+        <attr name="backgroundColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="HeartView">
+        <attr name="heart_sizeBasic" format="enum">
+            <enum name="none" value="0" />
+            <enum name="width" value="1" />
+            <enum name="height" value="2" />
+        </attr>
+        <attr name="heart_color" format="reference|color" />
+        <attr name="heart_edgeColor" format="reference|color" />
+        <attr name="heart_centerX" format="reference|float" />
+        <attr name="heart_centerY" format="reference|float" />
+        <attr name="heart_radius" format="reference|float" />
+        <attr name="heart_strokeColor" format="reference|color" />
+        <attr name="heart_strokeWidth" format="reference|dimension" />
+    </declare-styleable>
+    <declare-styleable name="SubmitView">
+        <attr name="sv_bindEditText1" format="reference" />
+        <attr name="sv_bindEditText2" format="reference" />
+        <attr name="sv_bindEditText3" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CollectView">
+        <attr name="cv_uncheckedColor" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="BottomDrawerLayout">
+        <attr name="bdl_enable" format="boolean|reference" />
+        <attr name="bdl_open" format="boolean|reference" />
+        <attr name="bdl_closeHeight" format="dimension|reference" />
+        <attr name="bdl_openTopMargin" format="dimension|reference" />
+        <attr name="bdl_openTopMarginStatusBarHeight" format="boolean|reference" />
+    </declare-styleable>
+    <declare-styleable name="ColorCircleBackgroundView">
+        <attr name="ccbv_color1" format="color" />
+        <attr name="ccbv_color2" format="color" />
+        <attr name="ccbv_color3" format="color" />
+        <attr name="ccbv_color4" format="color" />
+        <attr name="ccbv_color5" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ParallaxStackLayout_Layout">
+        <attr name="layout_parallaxDeviationX" format="dimension" />
+        <attr name="layout_parallaxDeviationY" format="dimension" />
+        <attr name="layout_parallaxRotationX" format="float" />
+        <attr name="layout_parallaxRotationY" format="float" />
+        <attr name="layout_parallaxRotationZ" format="float" />
+    </declare-styleable>
+</resources>

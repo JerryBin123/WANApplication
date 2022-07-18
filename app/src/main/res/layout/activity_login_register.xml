@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegisterActivity">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.wanapplication.widget.LoginBackgroundView
+            app:backgroundColor="@color/mine_background_blue"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:src="@drawable/ic_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:tint="@color/white" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+
+            android:src="@drawable/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="欢迎使用"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:layout_marginTop="160dp"
+            android:text="本APP由Goweii独立开发"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/lrviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+</LinearLayout>

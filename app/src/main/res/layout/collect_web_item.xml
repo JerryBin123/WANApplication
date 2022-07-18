@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.wanapplication.widget.NestedSwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:id="@+id/collect_web_sl"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:drag_edge="right"
+    app:show_mode="lay_down">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/mine_background_blue"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="#37e916"
+            android:textColor="@color/white"
+            android:text="复制链接" />
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/white"
+            android:text="编辑" />
+
+        <TextView
+            android:id="@+id/collect_web_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="#e37916"
+            android:textColor="@color/white"
+            android:text="删除" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/collect_web"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/collect_web_name"
+            android:text="我们新增了一个常用导航"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/collect_web_url"
+            android:text="https:///"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</com.example.wanapplication.widget.NestedSwipeLayout>

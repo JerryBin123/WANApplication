@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navi.NaviFragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        app:tabIndicatorHeight="0dp"
+        android:background="@color/mine_background_blue"
+        app:tabSelectedTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.example.wanapplication.NestedScrollableHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/navi_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.example.wanapplication.NestedScrollableHost>
+
+</LinearLayout>

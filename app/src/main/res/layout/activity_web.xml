@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebActivity">
+
+    <WebView
+        android:id="@+id/wv_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/web_read_later"
+        android:src="@drawable/ic_read_later"
+        android:background="@drawable/web_back"
+        android:layout_above="@+id/web_collect"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/web_collect"
+        android:src="@drawable/ic_collect"
+        android:background="@drawable/web_back"
+        android:layout_above="@+id/web_cancel"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="10dp"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/web_cancel"
+        android:src="@drawable/ic_close"
+        android:background="@drawable/web_back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="10dp"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/web_back"
+        android:src="@drawable/ic_back"
+        android:background="@drawable/web_back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="10dp"
+        android:padding="20dp"
+        android:visibility="visible"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

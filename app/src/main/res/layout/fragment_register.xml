@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".loginregister.RegisterFragment">
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginEnd="5dp"
+            android:text="去登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/ic_next"
+            android:scaleType="fitCenter"
+            android:layout_width="15dp"
+            android:layout_height="15dp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/register_id_name"
+        android:drawableLeft="@drawable/ic_account_normal"
+        android:hint="请输入用户名"
+        android:paddingTop="4dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
+
+    <EditText
+        android:id="@+id/register_id_pwd"
+        android:drawableLeft="@drawable/ic_password_normal"
+        android:hint="请输入密码"
+        android:paddingTop="4dp"
+        android:layout_below="@id/register_id_name"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
+
+    <EditText
+        android:id="@+id/register_id_repwd"
+        android:drawableLeft="@drawable/ic_password_normal"
+        android:hint="请输入密码"
+        android:paddingTop="4dp"
+        android:layout_below="@id/register_id_pwd"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"/>
+
+    <Button
+        android:id="@+id/register"
+        android:text="注册"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@id/register_id_repwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
